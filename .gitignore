@@ -1,0 +1,12 @@
+# Virtual environment
+my_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System files
+*.DS_Store
