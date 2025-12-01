@@ -597,7 +597,7 @@ class UnifiedReviewScraper:
                             width = star.get_attribute("style")
                             percent = int(width.replace("width:", "").replace("%;", ""))
                             rate += percent / 100
-                        rating = rate * 5  # Convert to 5-star scale
+                        rating = rate 
                     except:
                         rating = 0
                     
