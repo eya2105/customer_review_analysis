@@ -49,6 +49,15 @@
         "Positif": 0.8484848484848485
       }
     },
+    "data_info": {
+    "train_samples": 646,
+    "test_samples": 105,
+    "class_distribution": {
+      "Négatif": 212,
+      "Neutre": 177,
+      "Positif": 257
+      }
+    },
     "LogisticRegressionAugmentedData": {
       "accuracy": 0.7333333333333333,
       "weighted_f1": 0.7179444750873323,
