@@ -48,6 +48,46 @@
         "Neutre": 0.0,
         "Positif": 0.8484848484848485
       }
+    },
+    "LogisticRegressionAugmentedData": {
+      "accuracy": 0.7333333333333333,
+      "weighted_f1": 0.7179444750873323,
+      "macro_f1": 0.5644573144573145,
+      "per_class_f1": {
+        "Négatif": 0.5833333333333334,
+        "Neutre": 0.2857142857142857,
+        "Positif": 0.8243243243243243
+      }
+    },
+    "MultinomialNBAugmentedData": {
+      "accuracy": 0.7047619047619048,
+      "weighted_f1": 0.6653072787843678,
+      "macro_f1": 0.464299879394219,
+      "per_class_f1": {
+        "Négatif": 0.43243243243243246,
+        "Neutre": 0.14285714285714285,
+        "Positif": 0.8176100628930818
+      }
+    },
+    "ComplementNBAugmentedData": {
+      "accuracy": 0.6761904761904762,
+      "weighted_f1": 0.6641849641849641,
+      "macro_f1": 0.4913549913549913,
+      "per_class_f1": {
+        "Négatif": 0.45454545454545453,
+        "Neutre": 0.2222222222222222,
+        "Positif": 0.7972972972972973
+      }
+    },
+    "RandomForestAugmentedData": {
+      "accuracy": 0.7047619047619048,
+      "weighted_f1": 0.6363843741089251,
+      "macro_f1": 0.3964570858283433,
+      "per_class_f1": {
+        "Négatif": 0.375,
+        "Neutre": 0.0,
+        "Positif": 0.8143712574850299
+      }
     }
   }
 }
