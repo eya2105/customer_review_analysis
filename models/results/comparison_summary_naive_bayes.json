@@ -1,0 +1,43 @@
+{
+  "data_info": {
+    "train_samples": 431,
+    "test_samples": 105,
+    "class_distribution": {
+      "Négatif": 94,
+      "Neutre": 39,
+      "Positif": 298
+    }
+  },
+  "models": {
+    "MultinomialNB": {
+      "accuracy": 0.7238095238095238,
+      "weighted_f1": 0.6403326323471514,
+      "macro_f1": 0.3917456476440142,
+      "per_class_f1": {
+        "Négatif": 0.3448275862068966,
+        "Neutre": 0.0,
+        "Positif": 0.8304093567251462
+      }
+    },
+    "ComplementNB (Standard)": {
+      "accuracy": 0.7333333333333333,
+      "weighted_f1": 0.7030412682002241,
+      "macro_f1": 0.4797966744206083,
+      "per_class_f1": {
+        "Négatif": 0.6037735849056604,
+        "Neutre": 0.0,
+        "Positif": 0.8356164383561644
+      }
+    },
+    "ComplementNB (Threshold=0.10)": {
+      "accuracy": 0.19047619047619047,
+      "weighted_f1": 0.14859257301440465,
+      "macro_f1": 0.24205982115325317,
+      "per_class_f1": {
+        "Négatif": 0.5957446808510638,
+        "Neutre": 0.13043478260869565,
+        "Positif": 0.0
+      }
+    }
+  }
+}
