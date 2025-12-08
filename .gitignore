@@ -13,3 +13,9 @@ __pycache__/
 
 # Environment variables
 .env
+finetuning_models/my_sentiment_model
+finetuning_models/my_sentiment_model_without_augmentation
+finetuning_models/results_xlm_roberta
+finetuning_models/logs
+
+

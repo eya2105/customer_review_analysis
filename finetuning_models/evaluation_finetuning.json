@@ -1,0 +1,52 @@
+{
+    "model_info": {
+        "model_name": "xlm-roberta-base",
+        "train_samples": 433,
+        "test_samples": 109,
+        "class_distribution": {
+            "0_Négatif": 94,
+            "1_Neutre": 39,
+            "2_Positif": 300
+        }
+    },
+    "transformer_model": {
+        "accuracy": 0.8440366972477065,
+        "precision": 0.8564724653323634,
+        "recall": 0.8440366972477065,
+        "f1_weighted": 0.8139673131865207,
+        "f1_macro": 0.6301096067053514
+    },
+    "classification_report": {
+        "negatif": {
+            "precision": 0.8260869565217391,
+            "recall": 0.7916666666666666,
+            "f1-score": 0.8085106382978724,
+            "support": 24.0
+        },
+        "neutre": {
+            "precision": 1.0,
+            "recall": 0.1,
+            "f1-score": 0.18181818181818182,
+            "support": 10.0
+        },
+        "positif": {
+            "precision": 0.8470588235294118,
+            "recall": 0.96,
+            "f1-score": 0.8999999999999999,
+            "support": 75.0
+        },
+        "accuracy": 0.8440366972477065,
+        "macro avg": {
+            "precision": 0.8910485933503837,
+            "recall": 0.6172222222222222,
+            "f1-score": 0.6301096067053514,
+            "support": 109.0
+        },
+        "weighted avg": {
+            "precision": 0.8564724653323634,
+            "recall": 0.8440366972477065,
+            "f1-score": 0.8139673131865207,
+            "support": 109.0
+        }
+    }
+}
