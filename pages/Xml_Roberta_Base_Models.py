@@ -82,17 +82,17 @@ col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.metric("Accuracy - Modèle 1", round(acc1, 4)) 
-    st.metric("F1-weighted - Modèle 1", round(report1["macro avg"]["f1-score"], 4))
+    st.metric("F1-macro - Modèle 1", round(report1["macro avg"]["f1-score"], 4))
 
 with col2:
     st.metric("Accuracy - Modèle 2", round(acc2, 4))
-    st.metric("F1-weighted - Modèle 2", round(report2["macro avg"]["f1-score"], 4))
+    st.metric("F1-macro - Modèle 2", round(report2["macro avg"]["f1-score"], 4))
 with col3:
     st.metric("Accuracy - Modèle 3", round(acc3, 4))
-    st.metric("F1-weighted - Modèle 3", round(report3["macro avg"]["f1-score"], 4))
+    st.metric("F1-macro - Modèle 3", round(report3["macro avg"]["f1-score"], 4))
 with col4:
     st.metric("Accuracy - Modèle 4", round(acc4, 4))
-    st.metric("F1-weighted - Modèle 4", round(report4["macro avg"]["f1-score"], 4))
+    st.metric("F1-macro - Modèle 4", round(report4["macro avg"]["f1-score"], 4))
 
 # ==============================
 # GRAPHIQUES ACCURACY & F1
