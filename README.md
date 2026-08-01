@@ -2,12 +2,6 @@
 
 Customer Review Analysis is an end-to-end NLP project for sentiment classification of customer reviews from California gyms. The project combines web scraping, data cleaning, classical machine learning, transformer fine-tuning, and an interactive Streamlit app.
 
-## Why this project is valuable
-- Demonstrates a complete AI workflow from raw data to deployment-ready inference
-- Combines traditional ML and modern transformer-based approaches
-- Uses a realistic business problem: understanding customer sentiment at scale
-- Provides a strong portfolio project for AI, NLP, and data science internships
-
 ## Project structure
 ```text
 customer-review-analysis/
@@ -51,19 +45,9 @@ python scripts/run_app.py
 ```
 
 ## Configuration
-The project uses [config.yaml](config.yaml) for all portable paths and defaults. You can override paths through environment variables such as:
-- CUSTOMER_REVIEW_MODEL_PATH
-- CUSTOMER_REVIEW_RAW_DATA
-- CUSTOMER_REVIEW_CLEANED_DATA
-
+The project uses [config.yaml](config.yaml) for all portable paths and defaults. 
 ## Notes
 - The notebooks in the repository are kept for reference and experimentation.
-- The scripts in [scripts/](scripts/) are the recommended entry points for reproducible runs.
-- The Streamlit app loads the fine-tuned model from the configured path and will show a friendly message if the model is missing.
+- The scripts in [scripts/](scripts/) are the entry points for reproducible runs.
 
-## Recommended next steps
-- Add automated tests
-- Add experiment tracking with MLflow or Weights & Biases
-- Containerize the app with Docker
-- Deploy the inference app to a cloud platform
 
