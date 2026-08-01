@@ -1,0 +1,28 @@
+project:
+  name: customer-review-analysis
+  description: End-to-end customer review sentiment analysis pipeline
+
+paths:
+  raw_data: data/raw/all_california_gym_reviews.csv
+  cleaned_data: data/cleaned/cleaned_reviews_general.csv
+  finetuning_splits_dir: data/cleaned/finetuning-splits
+  ml_splits_dir: data/cleaned/ml-methods-splits
+  finetuning_models_dir: finetuning_models
+  evaluation_results_dir: evaluation
+  finetuning_test_data: data/cleaned/finetuning-splits/test_set.csv
+  ml_train_data: data/cleaned/ml-methods-splits/train_set.csv
+  ml_test_data: data/cleaned/ml-methods-splits/test_set.csv
+  augmented_train_data: data/cleaned/ml-methods-splits/augmented_train_set.csv
+  finetuning_train_data: data/cleaned/finetuning-splits/train_set.csv
+
+models:
+  app_model_path: finetuning_models/my_sentiment_model_data_augmentation
+  finetuning_model_name: xlm-roberta-base
+  random_state: 42
+
+app:
+  title: Customer Review Analysis
+  label_map:
+    0: Negatif
+    1: Neutre
+    2: Positif

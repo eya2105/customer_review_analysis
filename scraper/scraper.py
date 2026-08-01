@@ -17,9 +17,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from tqdm import tqdm
 
-from config import CSV_FILENAME, CSV_ENCODING, HEADLESS, IMPLICIT_WAIT, PAGE_LOAD_TIMEOUT, USER_AGENT
-from config import SCROLL_ATTEMPTS_CONTAINER, SCROLL_ATTEMPTS_WINDOW, SCROLL_DELAY, DELAY_BETWEEN_LOCATIONS, PROCESSING_DELAY
-from language_dict import DATE_PATTERNS, COOKIE_SELECTORS, REVIEW_BUTTONS, CONTAINER_SELECTORS, REVIEW_SELECTORS
+from scraper.config import CSV_FILENAME, CSV_ENCODING, HEADLESS, IMPLICIT_WAIT, PAGE_LOAD_TIMEOUT, USER_AGENT
+from scraper.config import SCROLL_ATTEMPTS_CONTAINER, SCROLL_ATTEMPTS_WINDOW, SCROLL_DELAY, DELAY_BETWEEN_LOCATIONS, PROCESSING_DELAY
+from scraper.language_dict import DATE_PATTERNS, COOKIE_SELECTORS, REVIEW_BUTTONS, CONTAINER_SELECTORS, REVIEW_SELECTORS
 
 
 class UnifiedReviewScraper:
@@ -386,7 +386,7 @@ class UnifiedReviewScraper:
     
     def scrape_top_rated(self):
         """Scrape reviews from top-rated.online"""
-        from config import OTHER_SOURCES
+        from scraper.config import OTHER_SOURCES
         source_name, url, location_name = OTHER_SOURCES[0]  # top-rated.online
         
         try:
@@ -475,7 +475,7 @@ class UnifiedReviewScraper:
     
     def scrape_expat(self):
         """Scrape posts from expat.com"""
-        from config import OTHER_SOURCES
+        from scraper.config import OTHER_SOURCES
         source_name, url, location_name = OTHER_SOURCES[1]  # expat.com
         
         try:
@@ -559,7 +559,7 @@ class UnifiedReviewScraper:
     
     def scrape_trustburn(self):
         """Scrape reviews from trustburn.com"""
-        from config import OTHER_SOURCES
+        from scraper.config import OTHER_SOURCES
         source_name, url, location_name = OTHER_SOURCES[2]  # trustburn.com
         
         try:
